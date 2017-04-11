@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Fire Department and Armour Vehicle Museum</title>
+    <link rel="stylesheet" href="themes/myTheme.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<style type="text/css">
+
+	h7,h5,h4,h3,h2 {
+		font-family : "Blackoak Std";
+		}
+	#getTo {
+		font-size:24px;
+		color:#FF6700;
+		text-decoration: none;
+		}
+		
+	#getTo:hover {
+		color:#EF5356;
+		text-decoration: underline;
+		}
+	#getTo:active {
+		color:#FF0004;
+		text-decoration: underline;
+		}
+
+</style>
+
+<body>
+
+	<div data-role="page" id="FirstPage" data-theme="d">
+    
+    	<center><h5>Welcome to The Armoured Vehicle Museum</h5></center>
+        
+    	<center><img src="Logo development final.jpg"  height="290" width="320" alt="logo" /></center>
+        
+        <div data-role="navbar">
+            
+			     <ul>
+                 	<li><a href="#Home" class="ui-btn ui-icon-home ui-btn-icon-top" data-transition="none">Enter to the page</a></li>
+				</ul>
+			</div>
+        
+        <div data-role="footer" data-position="fixed">
+			<center><h8>&copy;Dragos, Denis, Denis, Alex and Sergiu 2015</h8></center>
+		
+       </div>	
+    
+    </div>
+
+	<div data-role="page" id="Home" data-theme="d">
+    
+		<div data-role="header">
+        
+        
+        
+        <center><img src="Logo development final4.jpg" height="170" width="191" alt="logo" /></center>
+          <center><h7>The Armoured Vehicle Museum</h7></center>
+        
+		  <div data-role="navbar">
+             
+                
+            
+			     <ul>
+                 	<li><a href="#Home" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="none">Home</a></li>
+                    <li><a href="#AboutMuseum" class="ui-btn ui-icon-bars ui-btn-icon-left" data-transition="none">About</a></li>
+                    <li><a href="#Attractions" class="ui-btn ui-icon-eye ui-btn-icon-left" data-transition="none">Attractions</a></li>
+				</ul>
+                
+			</div>
+            
+        
+		</div>
+        
+     
+        
+	  <div data-role="main" class="ui-content">
+      
+      <center><a id="getTo" href="#register" data-icon="user" data-iconpos="Get to know us">Get to know us !!!</a></center>
+      
+       <div data-role="panel" data-position="right" data-display="overlay" data-theme="a" id="register">
+          		
+                <form action="dbconnect.php" method="post">
+                    <h4>Register</h4>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" value="">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" value="">
+                    
+                    
+                    
+                    <input type="submit" name="submit" value="Register" data-inline="true">
+                  
+                    
+             	</form>
+                
+                <h4>Change Password</h4>
+                <form method="post" action="change.php">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">      
+                    <label for="password">New Password</label>
+                    <input type="password" name="password" id="password"> 
+                  <input type="submit" data-inline="true" value="Change">
+    			</form>
+                
+               <h4>Subscribe for more information</h4>
+                <form method="post" action="email.php">
+                     <input type="email" name="email" id="email" placeholder="Enter your email here">
+                     <input type="submit" data-inline="true" value="Submit">
+    			</form>
+                
+                <h4>Sent Emails to Visitors</h4>
+                <form method="post" action="sendEmails.php">
+                  	  <label for="subject">Subject&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                      <input type="text" name="subject" id="subject">
+                      <label for="mymail">Message&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                       <textarea name="mymail" id="mymail"></textarea>
+                       <input type="submit" data-inline="true" value="Send">
+    			</form>
+                
+                <h4>Remove Subscribers</h4>
+                <form method="post" action="removefrom.php">
+                      <label for="email"></label>
+                      <input type="email" name="email" id="email">
+                      <input type="submit" data-inline="true" value="Remove">
+   				 </form>
+                
+                <div class="ui-grid-a">
+                        <div class="ui-block-a"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini">Cancel</a></div>
+                    </div>
+                                    
+                </div>  
+      
+      
+      
+      	<center><h4>Opening Hours</h4></center>
+        
+        
+<center><p>Monday	-	10:00 to 15:00</p>
+<p>Tuesday	-	10:00 to 15:00</p>
+<p>Wednesday	-	10:00 to 15:00</p>
+<p>Thursday	-	10:00 to 15:00</p>
+<p>Friday	-	10:00 to 15:00</p>
+<p>Saturday	-	Closed</p>
+<p>Sunday	-	10:00 to 15:00</p><center>
+        
+	  <center><h4>About us</h4></center>
+      <p>Welcome to the 
+Army Combat School Vehicle History Archives
+
+ 	
+The museum has the largest collection of military armored vehicles and other effects, 
+which are connected to panservåbnets development in the Danish defense. 
+The armored vehicles have all been in use in the Danish army in the period from 1945 to dd 
+Tank exhibition contains a copy of all the tanks, who have served in the Danish army from 1945 onwards. 
+In addition to tanks containing the museum also various historic weapons and uniforms.
+
+Here at the museum web page you can view information about the collection of the vehicles and other items in the collection. 
+Army Combat School Vehicle History Reports are run by an association, resident in the museum. 
+The association provides the framework for all the activities taking place at the museum.
+
+The museum is located in the same building where the museum Denmark Fire also belong.</p>
+      
+      <div data-role="footer" data-position="fixed">
+			<center><h8>&copy;Dragos, Denis, Denis, Alex and Sergiu 2015</h8></center>
+		
+       </div>
+      </div>
+      
+</div>
+		
+	  </div>
+      
+			
+        
+	</div>
+	
+	<div data-role="page" id="AboutMuseum" data-theme="d">
+		
+        <div data-role="header">
+        
+                <center><img src="Logo development final4.jpg" height="170" width="191" alt="logo" /></center>
+          <center><h7>The Armoured Vehicle Museum</h7></center>
+        
+		  <div data-role="navbar">
+
+			  	 <ul>
+                 	<li><a href="#Home" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="none">Home</a></li>
+                    <li><a href="#AboutMuseum" class="ui-btn ui-icon-bars ui-btn-icon-left" data-transition="none">About</a></li>
+                    <li><a href="#Attractions" class="ui-btn ui-icon-eye ui-btn-icon-left" data-transition="none">Attractions</a></li>
+				</ul>
+			</div>
+		</div>
+        
+		<div data-role="main" class="ui-content">
+        
+        <center><a id="getTo" href="#register" data-icon="user" data-iconpos="Get to know us">Get to know us !!!</a></center>
+      
+       <div data-role="panel" data-position="right" data-display="overlay" data-theme="a" id="register">
+          		
+                <form action="dbconnect.php" method="post">
+                    <h4>Register</h4>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" value="">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" value="">
+                    
+                    
+                    
+                    <input type="submit" name="submit" value="Register" data-inline="true">
+                  
+                    
+             	</form>
+                
+                <h4>Change Password</h4>
+                <form method="post" action="change.php">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">      
+                    <label for="password">New Password</label>
+                    <input type="password" name="password" id="password"> 
+                  <input type="submit" data-inline="true" value="Change">
+    			</form>
+                
+               <h4>Subscribe for more information</h4>
+                <form method="post" action="email.php">
+                     <input type="email" name="email" id="email" placeholder="Enter your email here">
+                     <input type="submit" data-inline="true" value="Submit">
+    			</form>
+                
+                <h4>Sent Emails to Visitors</h4>
+                <form method="post" action="sendEmails.php">
+                  	  <label for="subject">Subject&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                      <input type="text" name="subject" id="subject">
+                      <label for="mymail">Message&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                       <textarea name="mymail" id="mymail"></textarea>
+                       <input type="submit" data-inline="true" value="Send">
+    			</form>
+                
+                <h4>Remove Subscribers</h4>
+                <form method="post" action="removefrom.php">
+                      <label for="email"></label>
+                      <input type="email" name="email" id="email">
+                      <input type="submit" data-inline="true" value="Remove">
+   				 </form>
+                
+                <div class="ui-grid-a">
+                        <div class="ui-block-a"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini">Cancel</a></div>
+                    </div>
+                                    
+                </div>  
+        
+
+	<center><h4>The museum's history</h4></center>
+
+<p>Army Combat School Vehicle History Collection stems from the old collection of armored vehicles that were initially developed in the old Oksbol north camp. 
+In 1982, they moved into Oksbol south camp on the area around Curb avenue at the newly built Army Combat School. 
+Here was vehicles as listed, and each year they tried to keep the area neat and vehicles presentable. 
+In through a årerække kept Oksbøllejren every Wednesday Open camp where the public had access to Curb avenue, where the exhibition formed a fine background also for a showing of the Army newer equipment. There was at that time also an exhibition of the Warsaw Pact vehicles front end of Palludan Müller avenue - which is an extension of Curb avenue. Along worked Warsaw Pact exhibition and exhibition in armor avenue in a årerække apprenticeship and as a good introduction to the students at Army Combat School Courses in panservåbenets origin, background and technological development. As the years passed, however, it became harder and harder to hold exhibition and vehicles presentable just as they were largely disrupted under the weather. In 2008 the situation was so serious that if not found another solution and another place for the vehicles they would actually disappear - go to and be lost forever.</p>
+
+	<center><h4>Another solution ..</h4></center>
+
+<p>In Oksbol was in the meantime established a Fire Truck Museum. 
+The museum had been pieced together from historical fire equipment and vehicles from a number of collections in new premises at Industrivej in Oksboel. 
+In autumn 2008, began negotiations with the Fire Engine Museum for cooperation. 
+The negotiations resulted the same year that a group of promoters took over an approximately 900kvm exhibition space in the Fire Engine Museum at Industrivej in Oksbol and started to build the exhibit and the museum that is available today. 
+All resources went to this work and first in December 2010, the profits to found Army Combat School Vehicle History Association - currently performing responsible for the collection. 
+The same year visited 10,000 - visitors Museum - year after 12,600! The association is run by volunteers and consists of people who either have been, still are, or may never have been employed in the Army or Army Combat School. The guiding is interest to preserve and disseminate the interest in a piece of unique Danish cultural history and a unique Danish heritage.</p>
+
+	<center><h4>The future</h4></center>
+<p>Is never easy to see into the future and see what it will offer opportunities. 
+Tøjhusmuseet has formal responsibility to ensure the preservation of the Armed Forces - as the Army's history for posterity.  
+This task can Tøjhusmuseet not solve without the assistance of the many historic collections which fortunately are very many places in the army and who act as knowledge center. In addition Tøjhusmuseet particularly also challenged when it come to the exhibition of large objects such as tanks. 
+There is therefore a need for places like our museum and need our armor Museum if this part of our common history to be told even if the army one day possibly had get a separate museum.</p>
+</div>
+		<div data-role="footer" data-position="fixed">
+			<center><h8>&copy;Dragos, Denis, Denis, Alex and Sergiu 2015</h8></center>
+		</div>	
+	</div>
+    
+    
+	<div data-role="page" id="Attractions" data-theme="d">
+    
+		<div data-role="header">
+        
+          <center><img src="Logo development final4.jpg" height="170" width="191" alt="logo" /></center>
+           <center><h7>The Armoured Vehicle Museum</h7></center>
+        
+		  <div data-role="navbar">
+            
+			     <ul>
+                 	<li><a href="#Home" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="none">Home</a></li>
+                    <li><a href="#AboutMuseum" class="ui-btn ui-icon-bars ui-btn-icon-left" data-transition="none">About</a></li>
+                    <li><a href="#Attractions" class="ui-btn ui-icon-eye ui-btn-icon-left" data-transition="none">Attractions</a></li>
+				</ul>
+			</div>
+		</div>
+        
+	  <div data-role="main" class="ui-content">
+      
+      <center><a id="getTo" href="#register" data-icon="user" data-iconpos="Get to know us">Get to know us !!!</a></center>
+      
+       <div data-role="panel" data-position="right" data-display="overlay" data-theme="a" id="register">
+          		
+                <form action="dbconnect.php" method="post">
+                    <h4>Register</h4>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" value="">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" value="">
+                    
+                    
+                    
+                    <input type="submit" name="submit" value="Register" data-inline="true">
+                  
+                    
+             	</form>
+                
+                <h4>Change Password</h4>
+                <form method="post" action="change.php">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">      
+                    <label for="password">New Password</label>
+                    <input type="password" name="password" id="password"> 
+                  <input type="submit" data-inline="true" value="Change">
+    			</form>
+                
+               <h4>Subscribe for more information</h4>
+                <form method="post" action="email.php">
+                     <input type="email" name="email" id="email" placeholder="Enter your email here">
+                     <input type="submit" data-inline="true" value="Submit">
+    			</form>
+                
+                <h4>Sent Emails to Visitors</h4>
+                <form method="post" action="sendEmails.php">
+                  	  <label for="subject">Subject&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                      <input type="text" name="subject" id="subject">
+                      <label for="mymail">Message&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                       <textarea name="mymail" id="mymail"></textarea>
+                       <input type="submit" data-inline="true" value="Send">
+    			</form>
+                
+                <h4>Remove Subscribers</h4>
+                <form method="post" action="removefrom.php">
+                      <label for="email"></label>
+                      <input type="email" name="email" id="email">
+                      <input type="submit" data-inline="true" value="Remove">
+   				 </form>
+                
+                <div class="ui-grid-a">
+                        <div class="ui-block-a"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini">Cancel</a></div>
+                    </div>
+                                    
+                </div>  
+      
+      <div data-role="collapsible">
+			  <h1>Raise your experience with...</h1>
+  <ul>
+    <li>Moving Canons</li>
+    <li>Fire sounds </li>
+    <li>Smoke from cannons </li>
+    <li>Explosion - lights </li>
+    <li>Vibration- At every 5 minutes</li>
+  </ul>
+<center><img src="soldiers war sand army bombs desert smoke fight commander israel merkava tanks usa dust combat armor_wallpaperswa.com_7.jpg"  alt="" width="290" height="250"/></center>
+</div>
+
+<div data-role="collapsible">
+			  <h1>Taste the game World of Thanks</h1>
+				<ul>
+				  <li>Screen with consoles</li>
+				  <li>Competition with maximum 4 players</li>
+				  <li>Prize for the winner ( come and get it )</li>
+				  <li>The newest model of thanks</li>
+              </ul>
+				<center><img src="World-of-Tanks-0.png"  alt="" width="290" height="250"/></center>
+        </div>
+        
+<div data-role="collapsible">
+
+              <h1>Remote Control Tanks</h1>
+				<ul>
+				  <li>RC Tanks that can shoot</li>
+				  <li>Battleground replica</li>
+				  <li>Visitors can fight eachother</li>
+              </ul>
+				<center><img src="HE0802-AUS-1.png"  alt="" width="290" height="250"/></center>
+</div>
+
+
+
+      <div data-role="footer" data-position="fixed">
+			<center><h8>&copy;Dragos, Denis, Denis, Alex and Sergiu 2015</h8></center>
+		</div>
+    </div>
+
+    
+</body>
+</html>
