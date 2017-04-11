@@ -30,7 +30,7 @@
   $text = $_POST['mymail'];
   $to = 'tesu_andy_95@yahoo.com';
 
-$dbc = mysqli_connect('tesuserg_PhPConnection' , 'tesuserg_phpcons' , 'DarkEight1995', 'tesuserg_PhPConnection')
+$dbc = mysqli_connect('tesuserg_PhPConnection' , 'tesuserg_phpcons' , '', 'tesuserg_PhPConnection')
 	or die('Could not connect to MySQL.');
 
   $query = "SELECT * FROM email";
