@@ -25,7 +25,7 @@
     	<center><img src="Logo development final.jpg"  height="290" width="320" alt="logo" /></center>
 
 <?php
-$dbc = mysqli_connect('tesuserg_PhPConnection' , 'tesuserg_phpcons' , 'DarkEight1995', 'tesuserg_PhPConnection')
+$dbc = mysqli_connect('tesuserg_PhPConnection' , 'tesuserg_phpcons' , '', 'tesuserg_PhPConnection')
 	or die('Could not connect to MySQL.');
 
   $email = $_POST['email'];
